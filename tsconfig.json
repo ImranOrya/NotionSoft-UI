@@ -6,7 +6,8 @@
     "baseUrl": "src",
     "ignoreDeprecations": "6.0",
     "paths": {
-      "@/utils/*": ["utils/*"]
+      "@/utils/*": ["utils/*"],
+      "@/*": ["*"]
     }
   }
 }

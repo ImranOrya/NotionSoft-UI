@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn";
+import { cn } from "../../utils/cn";
 import React from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={cn(
         "px-4 py-2 rounded-md font-medium transition-colors",
-        variant === "primary" && "bg-blue-500 text-white",
+        variant === "primary" && "bg-blue-500 hover:shadow-md text-white",
         variant === "secondary" && "bg-gray-200 text-black",
         className
       )}
