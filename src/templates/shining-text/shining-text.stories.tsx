@@ -1,4 +1,4 @@
-import { ShiningText } from "./ShinyText";
+import { ShiningText } from "@/templates/shining-text/shining-text";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof ShiningText> = {
