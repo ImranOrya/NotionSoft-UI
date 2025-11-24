@@ -1,4 +1,4 @@
-import { CircleLoader } from "./circle-loader"; // Adjust the import path as needed
+import CircleLoader from "./circle-loader"; // Adjust the import path as needed
 import { CircleLoaderProps } from "./circle-loader";
 
 // Meta information for Storybook

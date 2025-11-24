@@ -1,5 +1,5 @@
 import Button from "../button/button";
-import { AnimatedSheet } from "./AnimatedSheet";
+import AnimatedSheet from "./AnimatedSheet";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
 

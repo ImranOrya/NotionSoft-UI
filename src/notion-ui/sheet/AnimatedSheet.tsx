@@ -22,7 +22,7 @@ type AnimatedSheetProps = {
   animate: AnimateType;
 };
 
-export function AnimatedSheet({
+export default function AnimatedSheet({
   open,
   onClose,
   children,

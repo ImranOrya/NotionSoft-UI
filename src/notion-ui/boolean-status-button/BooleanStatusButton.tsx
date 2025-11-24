@@ -9,7 +9,7 @@ export interface BooleanStatusButtonProps {
   className?: string;
 }
 
-export function BooleanStatusButton(props: BooleanStatusButtonProps) {
+export default function BooleanStatusButton(props: BooleanStatusButtonProps) {
   const { getColor, className } = props;
   const data = getColor();
 

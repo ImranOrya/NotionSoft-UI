@@ -7,7 +7,11 @@ interface ShiningTextProps extends React.HTMLAttributes<HTMLSpanElement> {
   text: string;
 }
 
-export function ShiningText({ text, className, ...props }: ShiningTextProps) {
+export default function ShiningText({
+  text,
+  className,
+  ...props
+}: ShiningTextProps) {
   // Animate strictly left → right
   const styles = useSpring({
     from: { backgroundPosition: "-100% 0%" }, // start offscreen left

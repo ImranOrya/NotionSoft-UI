@@ -1,4 +1,4 @@
-import { BooleanStatusButton } from "./BooleanStatusButton";
+import BooleanStatusButton from "./BooleanStatusButton";
 import type { Meta, StoryObj } from "@storybook/react";
 
 // --------------------------------------------
