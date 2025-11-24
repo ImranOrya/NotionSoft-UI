@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 // import { cn } from "@/utils/cn";
-import { cn } from "../../../utils/cn";
+import { cn } from "../../utils/cn";
 import AnimatedItem from "@/components/notion-ui/animated-item";
 // import AnimatedItem from "../animated-item";
 

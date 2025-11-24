@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useSpring, animated } from "@react-spring/web";
-import { cn } from "../../../utils/cn";
+import { cn } from "../../utils/cn";
 // import { cn } from "@/utils/cn";
 
 interface ShiningTextProps extends React.HTMLAttributes<HTMLSpanElement> {
