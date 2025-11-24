@@ -1,8 +1,9 @@
-import { ShiningText } from "@/templates/shining-text/shining-text";
+import { ShiningText } from "../shining-text/shining-text";
+
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof ShiningText> = {
-  title: "Components/ShiningText",
+  title: "Text/ShiningText",
   component: ShiningText,
   args: {
     text: "Loading...",
