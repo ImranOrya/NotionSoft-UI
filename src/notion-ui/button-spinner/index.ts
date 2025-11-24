@@ -1,3 +1,3 @@
-import { ButtonSpinner } from "./button-spinner";
+import ButtonSpinner from "./button-spinner";
 
 export default ButtonSpinner;
