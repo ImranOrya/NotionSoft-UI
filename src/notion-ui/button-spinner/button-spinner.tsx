@@ -7,7 +7,7 @@ export interface IButtonSpinnerProps {
   className?: string;
 }
 
-export default function ButtonSpinner(props: IButtonSpinnerProps) {
+export function ButtonSpinner(props: IButtonSpinnerProps) {
   const { loading, children, className } = props;
   return (
     <>

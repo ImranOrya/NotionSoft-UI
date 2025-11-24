@@ -1,5 +1,5 @@
+import { BooleanStatusButton } from "./BooleanStatusButton";
 import type { Meta, StoryObj } from "@storybook/react";
-import BooleanStatusButton from "./BooleanStatusButton";
 
 // --------------------------------------------
 // Status options used for Storybook showcase

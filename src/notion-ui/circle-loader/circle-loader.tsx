@@ -8,7 +8,7 @@ export interface CircleLoaderProps {
   parentClassName?: string;
 }
 
-export default function CircleLoader(props: CircleLoaderProps) {
+export function CircleLoader(props: CircleLoaderProps) {
   const { label, className, labelclassname, parentClassName, ...restProps } =
     props;
 

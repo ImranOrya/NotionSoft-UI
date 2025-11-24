@@ -1,5 +1,5 @@
 import Button from "../button/button";
-import ButtonSpinner from "./button-spinner";
+import { ButtonSpinner } from "./button-spinner";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof ButtonSpinner> = {
