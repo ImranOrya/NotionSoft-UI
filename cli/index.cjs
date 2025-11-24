@@ -10,10 +10,10 @@ const { execSync } = require("child_process");
    Helper: get template path
 ------------------------------- */
 function getTemplateFile(component) {
-  // Library template: src/notion-ui/button/button.tsx
+  // Library template: src/components/notion-ui/button/button.tsx
   return path.join(
     __dirname,
-    "../src/notion-ui",
+    "../src/components/notion-ui",
     component,
     component + ".tsx"
   );
@@ -153,7 +153,7 @@ program
   .command("list")
   .description("List available components")
   .action(() => {
-    const templatesDir = path.join(__dirname, "../src/notion-ui");
+    const templatesDir = path.join(__dirname, "../src/components/notion-ui");
     const components = fs.readdirSync(templatesDir).filter((folder) => {
       const file = path.join(templatesDir, folder, folder + ".tsx");
       return fs.existsSync(file);

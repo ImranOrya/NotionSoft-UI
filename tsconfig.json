@@ -7,7 +7,6 @@
     "ignoreDeprecations": "6.0",
     "paths": {
       "@/utils/*": ["utils/*"],
-      "@/components/*": ["notion-ui/*"],
       "@/*": ["*"]
     }
   }
