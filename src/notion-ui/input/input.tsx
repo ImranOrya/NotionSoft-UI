@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 // import { cn } from "@/utils/cn";
 import { cn } from "../../utils/cn";
-import AnimatedItem from "@/notion-ui/animated-item";
+import AnimatedItem from "@/components/animated-item";
 // import AnimatedItem from "../animated-item";
 
 export type NastranInputSize = "sm" | "md" | "lg";
