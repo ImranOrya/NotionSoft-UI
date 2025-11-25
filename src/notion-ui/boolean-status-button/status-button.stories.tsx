@@ -1,4 +1,4 @@
-import BooleanStatusButton from "./BooleanStatusButton";
+import StatusButton from "./status-button";
 import type { Meta, StoryObj } from "@storybook/react";
 
 // --------------------------------------------
@@ -33,7 +33,7 @@ interface WrapperProps {
 
 function Wrapper({ status, className }: WrapperProps) {
   return (
-    <BooleanStatusButton
+    <StatusButton
       className={className}
       getColor={() => statusOptions[status]}
     />
@@ -44,7 +44,7 @@ function Wrapper({ status, className }: WrapperProps) {
 // Storybook meta (now uses Wrapper, not the original)
 // --------------------------------------------
 const meta: Meta<typeof Wrapper> = {
-  title: "Button/BooleanStatusButton",
+  title: "Button/StatusButton",
   component: Wrapper,
   argTypes: {
     status: {

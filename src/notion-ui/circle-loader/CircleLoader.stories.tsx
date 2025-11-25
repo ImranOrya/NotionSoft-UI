@@ -3,7 +3,7 @@ import { CircleLoaderProps } from "./circle-loader";
 
 // Meta information for Storybook
 export default {
-  title: "Components/CircleLoader", // This will be the folder and component name in Storybook's sidebar
+  title: "Loader/CircleLoader", // This will be the folder and component name in Storybook's sidebar
   component: CircleLoader, // The component being showcased
   argTypes: {
     className: { control: "text" },

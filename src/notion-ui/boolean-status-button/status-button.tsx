@@ -1,7 +1,7 @@
 import { cn } from "../../utils/cn";
 // import { cn } from "@/utils/cn";
 
-export interface BooleanStatusButtonProps {
+export interface StatusButtonProps {
   getColor: () => {
     style: string;
     value?: string;
@@ -9,7 +9,7 @@ export interface BooleanStatusButtonProps {
   className?: string;
 }
 
-export default function BooleanStatusButton(props: BooleanStatusButtonProps) {
+export default function StatusButton(props: StatusButtonProps) {
   const { getColor, className } = props;
   const data = getColor();
 

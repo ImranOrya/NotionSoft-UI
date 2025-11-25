@@ -3,11 +3,11 @@ import { cn } from "../../utils/cn";
 // import { cn } from "@/utils/cn";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "warning" | "success";
+  variant?: "primary" | "secondary" | "warning" | "success" | "outline";
 }
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref: any) => {
-    const { className, children, variant, ...rest } = props;
+    const { className, children, variant, disabled, ...rest } = props;
     const style =
       variant == "secondary"
         ? "border hover:bg-primary hover:text-primary-foreground"
@@ -15,16 +15,21 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ? "bg-red-500 text-primary-foreground"
         : variant == "success"
         ? "bg-green-500 text-primary-foreground"
-        : "bg-primary hover:bg-primary shadow shadow-primary/50 text-primary-foreground/80 hover:opacity-90 hover:text-primary-foreground";
+        : variant == "outline"
+        ? "text-primary border border-primary/10 hover:bg-primary/5"
+        : "bg-primary hover:shadow hover:bg-primary shadow shadow-primary/50 text-primary-foreground/80 hover:opacity-90 hover:text-primary-foreground";
     return (
       <button
         {...rest}
+        disabled={disabled}
         ref={ref}
         className={cn(
           `rounded-sm cursor-pointer ltr:text-[13px] sm:ltr:text-sm rtl:text-[13px] sm:rtl:text-sm  rtl:font-semibold
-           hover:shadow transition w-fit
-            sm:px-4 py-[6px] leading-normal duration-200 ease-linear`,
+          transition w-fit
+            sm:px-4 py-1.5 leading-normal duration-200 ease-linear`,
           style,
+          disabled &&
+            "opacity-35 pointer-events-none disabled:cursor-not-allowed",
           className
         )}
       >

@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 // import { cn } from "@/utils/cn";
 import { cn } from "../../utils/cn";
-import AnimatedItem from "@/components/notion-ui/animated-item";
+import AnimatedItem from "../../notion-ui/animated-item";
 // import AnimatedItem from "../animated-item";
 
 export type NastranInputSize = "sm" | "md" | "lg";
@@ -14,7 +14,7 @@ export interface InputProps
   endContent?: React.ReactNode;
   errorMessage?: string;
   parentClassName?: string;
-  measurement: NastranInputSize;
+  measurement?: NastranInputSize;
 }
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
@@ -26,7 +26,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       startContent,
       endContent,
       parentClassName = "",
-      measurement = "md",
+      measurement = "sm",
       errorMessage,
       label,
       readOnly,
@@ -83,14 +83,14 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
       <div className={cn(parentClassName, "flex flex-col justify-end")}>
         <div
           className={cn(
-            "relative select-none h-fit rtl:text-lg-rtl ltr:text-lg-ltr"
+            "relative text-start  select-none h-fit rtl:text-lg-rtl ltr:text-lg-ltr"
           )}
         >
           {/* Start Content */}
           {startContent && (
             <span
               className={cn(
-                "absolute flex items-center ltr:left-[12px] rtl:right-[12px]",
+                "absolute flex items-center ltr:left-3 rtl:right-3",
                 heightStyle.startContent
               )}
             >
@@ -114,7 +114,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
           {requiredHint && (
             <span
               className={cn(
-                "absolute font-semibold text-red-600 rtl:text-[13px] ltr:text-[11px] ltr:right-[10px] rtl:left-[10px]",
+                "absolute font-semibold text-red-600 rtl:text-[13px] ltr:text-[11px] ltr:right-2.5 rtl:left-2.5",
                 heightStyle.required
               )}
             >

@@ -49,3 +49,9 @@ export const Success: Story = {
     variant: "success",
   },
 };
+export const Outline: Story = {
+  args: {
+    children: "Outline Button",
+    variant: "outline",
+  },
+};

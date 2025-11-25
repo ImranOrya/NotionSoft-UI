@@ -3,7 +3,7 @@ import ButtonSpinner from "./button-spinner";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof ButtonSpinner> = {
-  title: "Components/ButtonSpinner",
+  title: "Loader/ButtonSpinner",
   component: ButtonSpinner,
   parameters: {
     layout: "centered",
