@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Input } from "./input";
-import { Search, AlertTriangle } from "lucide-react";
+import { InputWrapper } from "./inputWrapper";
+import { Search, AlertTriangle, ListFilter } from "lucide-react";
 
 const meta: Meta<typeof Input> = {
   title: "Form/Input",
@@ -57,6 +58,32 @@ export const WithEndIcon: Story = {
     measurement: "md",
   },
 };
+
+// -------------------------
+// FILTER STORY (uses InputWrapper)
+// -------------------------
+
+export const WithStartfilter: StoryObj = {
+  render: (args) => (
+    <div className="w-[350px]">
+      <InputWrapper {...args} />
+    </div>
+  ),
+  args: {
+    label: "Search & Filter",
+    placeholder: "Search…",
+
+    measurement: "md",
+    filterOptions: [
+      { label: "All", value: "all" },
+      { label: "Active", value: "active" },
+      { label: "Inactive", value: "inactive" },
+    ],
+    onFilterSelect: (value) => console.log("Filter selected: ", value),
+  },
+};
+
+// -------------------------
 
 export const RequiredField: Story = {
   render: Template,

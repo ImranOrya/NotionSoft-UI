@@ -84,16 +84,14 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         <div
           className={cn(
             "relative text-start  select-none h-fit rtl:text-lg-rtl ltr:text-lg-ltr"
-          )}
-        >
+          )}>
           {/* Start Content */}
           {startContent && (
             <span
               className={cn(
                 "absolute flex items-center ltr:left-3 rtl:right-3",
                 heightStyle.startContent
-              )}
-            >
+              )}>
               {startContent}
             </span>
           )}
@@ -104,8 +102,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
               className={cn(
                 "absolute flex items-center ltr:right-[5px] rtl:left-[5px]",
                 heightStyle.endContent
-              )}
-            >
+              )}>
               {endContent}
             </span>
           )}
@@ -116,8 +113,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
               className={cn(
                 "absolute font-semibold text-red-600 rtl:text-[13px] ltr:text-[11px] ltr:right-2.5 rtl:left-2.5",
                 heightStyle.required
-              )}
-            >
+              )}>
               {requiredHint}
             </span>
           )}
@@ -128,8 +124,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
               htmlFor={label}
               className={cn(
                 "font-semibold rtl:text-xl-rtl ltr:text-lg-ltr inline-block pb-1"
-              )}
-            >
+              )}>
               {label}
             </label>
           )}
@@ -180,8 +175,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
                 transform: "translateY(0px)",
               },
             }}
-            intersectionArgs={{ once: true, rootMargin: "-5% 0%" }}
-          >
+            intersectionArgs={{ once: true, rootMargin: "-5% 0%" }}>
             <h1 className="text-red-400 text-start capitalize rtl:text-sm rtl:font-medium ltr:text-sm-ltr">
               {errorMessage}
             </h1>
